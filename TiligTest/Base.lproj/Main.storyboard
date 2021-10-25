@@ -1,24 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Kt-7m-NHe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="c5E-0f-Dft">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="ViewController" id="2Kt-7m-NHe" customClass="ViewController" customModule="TestWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OiR-d3-pF7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP WATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-U6-esR">
+                                <rect key="frame" x="20" y="94" width="374" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="lsV-KQ-U5p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA0-i8-Vtc">
+                                <rect key="frame" x="20" y="306" width="374" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="oOq-zX-kYt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGv-5v-TGW">
+                                <rect key="frame" x="82" y="525" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.25382646920000002" green="0.30512517690000002" blue="0.70984083409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Ym-ev-gBs"/>
+                                    <constraint firstAttribute="width" constant="250" id="wQT-YN-AkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startStopTimer:" destination="2Kt-7m-NHe" eventType="touchUpInside" id="Rjz-ev-s5E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gEg-0k-OHW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PA0-i8-Vtc" firstAttribute="centerY" secondItem="gEg-0k-OHW" secondAttribute="centerY" constant="-50" id="6s8-8m-nSs"/>
+                            <constraint firstItem="PA0-i8-Vtc" firstAttribute="centerX" secondItem="gEg-0k-OHW" secondAttribute="centerX" id="FOy-9G-Naa"/>
+                            <constraint firstItem="gEg-0k-OHW" firstAttribute="trailing" secondItem="PA0-i8-Vtc" secondAttribute="trailing" constant="20" id="KSJ-rm-W8W"/>
+                            <constraint firstItem="gEg-0k-OHW" firstAttribute="trailing" secondItem="qPJ-U6-esR" secondAttribute="trailing" constant="20" id="MIy-9V-qqw"/>
+                            <constraint firstItem="qPJ-U6-esR" firstAttribute="leading" secondItem="gEg-0k-OHW" secondAttribute="leading" constant="20" id="OBl-9e-VqQ"/>
+                            <constraint firstItem="hGv-5v-TGW" firstAttribute="centerX" secondItem="gEg-0k-OHW" secondAttribute="centerX" id="QsZ-HN-39l"/>
+                            <constraint firstItem="hGv-5v-TGW" firstAttribute="top" secondItem="PA0-i8-Vtc" secondAttribute="bottom" constant="25" id="VLI-ZF-IJ3"/>
+                            <constraint firstItem="PA0-i8-Vtc" firstAttribute="leading" secondItem="gEg-0k-OHW" secondAttribute="leading" constant="20" id="cpF-tz-N6C"/>
+                            <constraint firstItem="qPJ-U6-esR" firstAttribute="top" secondItem="gEg-0k-OHW" secondAttribute="top" constant="50" id="vnI-we-ENA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startStopButton" destination="hGv-5v-TGW" id="Z0E-kN-Gys"/>
+                        <outlet property="timerLabel" destination="PA0-i8-Vtc" id="UaA-NV-Rm4"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQi-m2-Nff" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="126" y="208"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

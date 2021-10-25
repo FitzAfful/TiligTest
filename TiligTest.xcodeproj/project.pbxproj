@@ -14,18 +14,10 @@
 		847606022726F3EE001C5BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847606012726F3EE001C5BB6 /* Assets.xcassets */; };
 		847606052726F3EE001C5BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847606032726F3EE001C5BB6 /* LaunchScreen.storyboard */; };
 		847606102726F3EE001C5BB6 /* TiligTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */; };
-		8476061B2726F3EE001C5BB6 /* TiligTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476061A2726F3EE001C5BB6 /* TiligTestUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8476060C2726F3EE001C5BB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 847605ED2726F3EB001C5BB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 847605F42726F3EB001C5BB6;
-			remoteInfo = TiligTest;
-		};
-		847606172726F3EE001C5BB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 847605ED2726F3EB001C5BB6 /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		8476060B2726F3EE001C5BB6 /* TiligTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiligTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiligTestTests.swift; sourceTree = "<group>"; };
 		847606112726F3EE001C5BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		847606162726F3EE001C5BB6 /* TiligTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiligTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8476061A2726F3EE001C5BB6 /* TiligTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiligTestUITests.swift; sourceTree = "<group>"; };
-		8476061C2726F3EE001C5BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847606132726F3EE001C5BB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				847605F72726F3EB001C5BB6 /* TiligTest */,
 				8476060E2726F3EE001C5BB6 /* TiligTestTests */,
-				847606192726F3EE001C5BB6 /* TiligTestUITests */,
 				847605F62726F3EB001C5BB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				847605F52726F3EB001C5BB6 /* TiligTest.app */,
 				8476060B2726F3EE001C5BB6 /* TiligTestTests.xctest */,
-				847606162726F3EE001C5BB6 /* TiligTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,15 +97,6 @@
 				847606112726F3EE001C5BB6 /* Info.plist */,
 			);
 			path = TiligTestTests;
-			sourceTree = "<group>";
-		};
-		847606192726F3EE001C5BB6 /* TiligTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8476061A2726F3EE001C5BB6 /* TiligTestUITests.swift */,
-				8476061C2726F3EE001C5BB6 /* Info.plist */,
-			);
-			path = TiligTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +137,6 @@
 			productReference = 8476060B2726F3EE001C5BB6 /* TiligTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		847606152726F3EE001C5BB6 /* TiligTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 847606252726F3EE001C5BB6 /* Build configuration list for PBXNativeTarget "TiligTestUITests" */;
-			buildPhases = (
-				847606122726F3EE001C5BB6 /* Sources */,
-				847606132726F3EE001C5BB6 /* Frameworks */,
-				847606142726F3EE001C5BB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				847606182726F3EE001C5BB6 /* PBXTargetDependency */,
-			);
-			name = TiligTestUITests;
-			productName = TiligTestUITests;
-			productReference = 847606162726F3EE001C5BB6 /* TiligTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +150,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					8476060A2726F3EE001C5BB6 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 847605F42726F3EB001C5BB6;
-					};
-					847606152726F3EE001C5BB6 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 847605F42726F3EB001C5BB6;
 					};
@@ -221,7 +170,6 @@
 			targets = (
 				847605F42726F3EB001C5BB6 /* TiligTest */,
 				8476060A2726F3EE001C5BB6 /* TiligTestTests */,
-				847606152726F3EE001C5BB6 /* TiligTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		847606092726F3EE001C5BB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		847606142726F3EE001C5BB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,14 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847606122726F3EE001C5BB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8476061B2726F3EE001C5BB6 /* TiligTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = 847605F42726F3EB001C5BB6 /* TiligTest */;
 			targetProxy = 8476060C2726F3EE001C5BB6 /* PBXContainerItemProxy */;
-		};
-		847606182726F3EE001C5BB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 847605F42726F3EB001C5BB6 /* TiligTest */;
-			targetProxy = 847606172726F3EE001C5BB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,46 +441,6 @@
 			};
 			name = Release;
 		};
-		847606262726F3EE001C5BB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97XB8J435J;
-				INFOPLIST_FILE = TiligTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fitzafful.TiligTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TiligTest;
-			};
-			name = Debug;
-		};
-		847606272726F3EE001C5BB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97XB8J435J;
-				INFOPLIST_FILE = TiligTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = fitzafful.TiligTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TiligTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +467,6 @@
 			buildConfigurations = (
 				847606232726F3EE001C5BB6 /* Debug */,
 				847606242726F3EE001C5BB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		847606252726F3EE001C5BB6 /* Build configuration list for PBXNativeTarget "TiligTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				847606262726F3EE001C5BB6 /* Debug */,
-				847606272726F3EE001C5BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
