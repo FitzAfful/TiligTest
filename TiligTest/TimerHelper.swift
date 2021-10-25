@@ -15,6 +15,7 @@ protocol TimerHelperProtocol {
     var timerString: Observable<String> { get set }
 
     func calculateTimerString() -> String
+    func getTotalCentiSeconds() -> Int
 }
 
 class TimerHelper: TimerHelperProtocol {
@@ -44,6 +45,10 @@ class TimerHelper: TimerHelperProtocol {
         let min = totalCentiSeconds.quotientAndRemainder(dividingBy: 6000)
         let sec = (min.remainder).quotientAndRemainder(dividingBy: 100)
         return String(format: "%0.2d:%0.2d:%0.2d", min.quotient, sec.quotient, sec.remainder)
+    }
+
+    func getTotalCentiSeconds() -> Int {
+        return totalCentiSeconds
     }
 }
 

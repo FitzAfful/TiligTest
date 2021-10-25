@@ -13,13 +13,15 @@
 		847606002726F3EB001C5BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847605FE2726F3EB001C5BB6 /* Main.storyboard */; };
 		847606022726F3EE001C5BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847606012726F3EE001C5BB6 /* Assets.xcassets */; };
 		847606052726F3EE001C5BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847606032726F3EE001C5BB6 /* LaunchScreen.storyboard */; };
-		847606102726F3EE001C5BB6 /* TiligTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */; };
 		847606292726F66C001C5BB6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606282726F66C001C5BB6 /* ViewModel.swift */; };
 		8476062A2726F66C001C5BB6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606282726F66C001C5BB6 /* ViewModel.swift */; };
 		8476062C2726F675001C5BB6 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062B2726F675001C5BB6 /* TimerHelper.swift */; };
 		8476062D2726F675001C5BB6 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062B2726F675001C5BB6 /* TimerHelper.swift */; };
 		8476062F2726FCCD001C5BB6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062E2726FCCD001C5BB6 /* Observable.swift */; };
 		847606302726FCCD001C5BB6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062E2726FCCD001C5BB6 /* Observable.swift */; };
+		847606322726FEAD001C5BB6 /* TimerHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606312726FEAD001C5BB6 /* TimerHelperTests.swift */; };
+		847606342726FEB8001C5BB6 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606332726FEB8001C5BB6 /* ViewModelTests.swift */; };
+		847606362726FEC4001C5BB6 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606352726FEC4001C5BB6 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,13 @@
 		847606042726F3EE001C5BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847606062726F3EE001C5BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8476060B2726F3EE001C5BB6 /* TiligTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiligTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiligTestTests.swift; sourceTree = "<group>"; };
 		847606112726F3EE001C5BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847606282726F66C001C5BB6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8476062B2726F675001C5BB6 /* TimerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHelper.swift; sourceTree = "<group>"; };
 		8476062E2726FCCD001C5BB6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		847606312726FEAD001C5BB6 /* TimerHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHelperTests.swift; sourceTree = "<group>"; };
+		847606332726FEB8001C5BB6 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		847606352726FEC4001C5BB6 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +109,10 @@
 		8476060E2726F3EE001C5BB6 /* TiligTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */,
 				847606112726F3EE001C5BB6 /* Info.plist */,
+				847606312726FEAD001C5BB6 /* TimerHelperTests.swift */,
+				847606332726FEB8001C5BB6 /* ViewModelTests.swift */,
+				847606352726FEC4001C5BB6 /* ViewControllerTests.swift */,
 			);
 			path = TiligTestTests;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 			files = (
 				847606302726FCCD001C5BB6 /* Observable.swift in Sources */,
 				8476062D2726F675001C5BB6 /* TimerHelper.swift in Sources */,
+				847606342726FEB8001C5BB6 /* ViewModelTests.swift in Sources */,
 				8476062A2726F66C001C5BB6 /* ViewModel.swift in Sources */,
-				847606102726F3EE001C5BB6 /* TiligTestTests.swift in Sources */,
+				847606322726FEAD001C5BB6 /* TimerHelperTests.swift in Sources */,
+				847606362726FEC4001C5BB6 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
