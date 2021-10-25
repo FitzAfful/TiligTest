@@ -15,6 +15,7 @@ class ViewModel {
     }
 
     func startStopTimer() {
-        
+        guard let tHelper = timerHelper else { return }
+        tHelper.currentState == .started ? tHelper.stopTimer() : tHelper.startTimer()
     }
 }
