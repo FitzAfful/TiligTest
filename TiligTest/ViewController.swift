@@ -15,6 +15,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        guard let vm = viewModel else { return }
+        vm.timeString.bind({ newTimeString in
+            self.timerLabel.text = newTimeString
+        })
+        vm.stateString.bind({ newButtonString in
+            self.startStopButton.setTitle(newButtonString, for: .normal)
+        })
     }
 
     @IBAction func startStopTimer(_ sender: Any) {

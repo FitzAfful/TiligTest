@@ -12,19 +12,21 @@ protocol TimerHelperProtocol {
     func stopTimer()
 
     var currentState: TimerState { get set }
-    var timerString: String { get set }
+    var timerString: Observable<String> { get set }
+
+    func calculateTimerString() -> String
 }
 
 class TimerHelper: TimerHelperProtocol {
     var currentState: TimerState = .stopped
     private var totalCentiSeconds = 0
     private var timer: Timer?
-    var timerString = "00:00:00"
+    var timerString: Observable<String> = Observable("00:00:00")
 
     func startTimer() {
         currentState = .started
         totalCentiSeconds = 0
-        timerString = "00:00:00"
+        timerString.value = "00:00:00"
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
     }
 
@@ -35,13 +37,13 @@ class TimerHelper: TimerHelperProtocol {
 
     @objc func timerFired() {
         totalCentiSeconds += 1
-        calculateTimerString()
+        self.timerString.value = calculateTimerString()
     }
 
-    func calculateTimerString() {
+    func calculateTimerString() -> String {
         let min = totalCentiSeconds.quotientAndRemainder(dividingBy: 6000)
         let sec = (min.remainder).quotientAndRemainder(dividingBy: 100)
-        self.timerString = String(format: "%0.2d:%0.2d:%0.2d", min.quotient, sec.quotient, sec.remainder)
+        return String(format: "%0.2d:%0.2d:%0.2d", min.quotient, sec.quotient, sec.remainder)
     }
 }
 
