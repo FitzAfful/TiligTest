@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP WATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-U6-esR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stopwatch App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-U6-esR">
                                 <rect key="frame" x="20" y="94" width="374" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="lsV-KQ-U5p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" red="0.25382646920000002" green="0.30512517690000002" blue="0.70984083409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Ym-ev-gBs"/>
-                                    <constraint firstAttribute="width" constant="250" id="wQT-YN-AkZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="wQT-YN-AkZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Start">
@@ -65,7 +65,7 @@
                             <constraint firstItem="qPJ-U6-esR" firstAttribute="leading" secondItem="gEg-0k-OHW" secondAttribute="leading" constant="20" id="OBl-9e-VqQ"/>
                             <constraint firstItem="hGv-5v-TGW" firstAttribute="centerX" secondItem="gEg-0k-OHW" secondAttribute="centerX" id="QsZ-HN-39l"/>
                             <constraint firstItem="hGv-5v-TGW" firstAttribute="top" secondItem="PA0-i8-Vtc" secondAttribute="bottom" constant="25" id="VLI-ZF-IJ3"/>
-                            <constraint firstItem="PA0-i8-Vtc" firstAttribute="leading" secondItem="gEg-0k-OHW" secondAttribute="leading" constant="20" id="cpF-tz-N6C"/>
+                            <constraint firstItem="PA0-i8-Vtc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gEg-0k-OHW" secondAttribute="leading" id="cpF-tz-N6C"/>
                             <constraint firstItem="qPJ-U6-esR" firstAttribute="top" secondItem="gEg-0k-OHW" secondAttribute="top" constant="50" id="vnI-we-ENA"/>
                         </constraints>
                     </view>
