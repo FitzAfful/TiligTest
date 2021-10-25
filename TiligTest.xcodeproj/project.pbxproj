@@ -14,6 +14,10 @@
 		847606022726F3EE001C5BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847606012726F3EE001C5BB6 /* Assets.xcassets */; };
 		847606052726F3EE001C5BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847606032726F3EE001C5BB6 /* LaunchScreen.storyboard */; };
 		847606102726F3EE001C5BB6 /* TiligTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */; };
+		847606292726F66C001C5BB6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606282726F66C001C5BB6 /* ViewModel.swift */; };
+		8476062A2726F66C001C5BB6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847606282726F66C001C5BB6 /* ViewModel.swift */; };
+		8476062C2726F675001C5BB6 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062B2726F675001C5BB6 /* TimerHelper.swift */; };
+		8476062D2726F675001C5BB6 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476062B2726F675001C5BB6 /* TimerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		8476060B2726F3EE001C5BB6 /* TiligTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiligTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8476060F2726F3EE001C5BB6 /* TiligTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiligTestTests.swift; sourceTree = "<group>"; };
 		847606112726F3EE001C5BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847606282726F66C001C5BB6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8476062B2726F675001C5BB6 /* TimerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				847606012726F3EE001C5BB6 /* Assets.xcassets */,
 				847606032726F3EE001C5BB6 /* LaunchScreen.storyboard */,
 				847606062726F3EE001C5BB6 /* Info.plist */,
+				847606282726F66C001C5BB6 /* ViewModel.swift */,
+				8476062B2726F675001C5BB6 /* TimerHelper.swift */,
 			);
 			path = TiligTest;
 			sourceTree = "<group>";
@@ -200,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				847605FD2726F3EB001C5BB6 /* ViewController.swift in Sources */,
+				8476062C2726F675001C5BB6 /* TimerHelper.swift in Sources */,
 				847605F92726F3EB001C5BB6 /* AppDelegate.swift in Sources */,
+				847606292726F66C001C5BB6 /* ViewModel.swift in Sources */,
 				847605FB2726F3EB001C5BB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8476062D2726F675001C5BB6 /* TimerHelper.swift in Sources */,
+				8476062A2726F66C001C5BB6 /* ViewModel.swift in Sources */,
 				847606102726F3EE001C5BB6 /* TiligTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

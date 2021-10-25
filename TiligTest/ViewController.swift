@@ -11,14 +11,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
+    var viewModel: ViewModel? = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func startStopTimer(_ sender: Any) {
-        
+        guard let vm = viewModel else { return }
+        vm.startStopTimer()
     }
 }
 
